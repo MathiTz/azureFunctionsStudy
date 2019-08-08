@@ -1,0 +1,27 @@
+{
+  "bindings": [
+    {
+      "authLevel": "function",
+      "type": "httpTrigger",
+      "direction": "in",
+      "name": "req",
+      "route": "puppies",
+      "methods": ["get"]
+    },
+    {
+      "type": "cosmosDB",
+      "name": "allPuppies",
+      "databaseName": "admin",
+      "collectionName": "Puppies",
+      "sqlQuery": "select * from Puppies p",
+      "createIfNotExists": true,
+      "connectionStringSetting": "CosmosDbConnectionString",
+      "direction": "in"
+    },
+    {
+      "type": "http",
+      "direction": "out",
+      "name": "res"
+    }
+  ]
+}
