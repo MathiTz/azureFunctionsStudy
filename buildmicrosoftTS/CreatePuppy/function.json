@@ -9,16 +9,6 @@
       "methods": ["post"]
     },
     {
-      "type": "cosmosDB",
-      "name": "allPuppies",
-      "databaseName": "admin",
-      "collectionName": "Puppies",
-      "sqlQuery": "select * from Puppies p",
-      "createIfNotExists": true,
-      "connectionStringSetting": "CosmosDbConnectionString",
-      "direction": "in"
-    },
-    {
       "type": "http",
       "direction": "out",
       "name": "res"
