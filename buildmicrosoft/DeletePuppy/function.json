@@ -5,8 +5,8 @@
       "type": "httpTrigger",
       "direction": "in",
       "name": "req",
-      "route": "puppies",
-      "methods": ["get"]
+      "route": "puppy/{id}",
+      "methods": ["delete"]
     },
     {
       "type": "http",

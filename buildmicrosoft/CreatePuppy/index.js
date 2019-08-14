@@ -1,13 +1,9 @@
 const MongoClient = require("mongodb").MongoClient;
-const auth = {
-  user: process.env.CosmosDBUser,
-  password: process.env.CosmosDBPassword
-};
 
 module.exports = function(context, req) {
   MongoClient.connect(
     process.env.CosmosDBURL,
-    { auth: auth },
+    { useNewUrlParser: true },
     (err, database) => {
       if (err) throw err;
       let puppy = ({ id, name, saying } = req.body);

@@ -1,14 +1,10 @@
 const MongoClient = require("mongodb").MongoClient;
-const auth = {
-  user: process.env.CosmosDBUser,
-  password: process.env.CosmosDBPassword
-};
 
 module.exports = function(context, req) {
   context.log("JavaScript HTTP trigger function processed a request");
   MongoClient.connect(
     process.env.CosmosDBURL,
-    { auth: auth },
+    { useNewUrlParser: true },
     (err, database) => {
       if (err) throw err;
       console.log("Connected sucessfully");
