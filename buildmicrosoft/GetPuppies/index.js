@@ -34,8 +34,8 @@ module.exports = function(context, req) {
 // "route": "puppies",
 // "methods": ["get"]
 // "CosmosDBUser": "demo-serveless",
-//     "CosmosDBPassword": "9PuiahEH1okZkF48bwY2T8Athsj1iD8GqeaUTjOc39X6tQb2IQH96kbT1iZ2s3A0oQiUSZOY3LYW0f18jcywGg==",
-//     "CosmosDBURL": "mongodb://demo-serveless.documents.azure.com:10255/?ssl=true&replicaSet=globaldb"
+//     "CosmosDBPassword": "",
+//     "CosmosDBURL": ""
 
 // module.exports = function(context, req) {
 //   context.log("JavaScript HTTP trigger function processed a request.");
