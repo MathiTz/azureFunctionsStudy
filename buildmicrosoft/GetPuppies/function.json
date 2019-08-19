@@ -9,6 +9,15 @@
       "methods": ["get"]
     },
     {
+      "type": "cosmosDB",
+      "name": "allPuppies",
+      "databaseName": "admin",
+      "collectionName": "Puppies",
+      "sqlQuery": "select * from Puppies p",
+      "connectionStringSetting": "CosmosDBURL",
+      "direction": "in"
+    },
+    {
       "type": "http",
       "direction": "out",
       "name": "res"
